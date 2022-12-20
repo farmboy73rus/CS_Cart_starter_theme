@@ -1,0 +1,36 @@
+h1, h2, h3, h4 {
+	font-family: @headings_font;
+	font-weight: @headings_font_weight;
+	letter-spacing: @heading_letter_spacing;
+
+	.uppercase() when (@titles_use_uppercase = true) {
+		text-transform: uppercase;
+	}
+	.uppercase();
+
+	a {
+		font-family: @headings_font;
+	}
+}
+h1 {
+	font-size: @headings_font_size;
+
+	.uppercase() when (@titles_use_uppercase = false) {
+    	@media screen and (min-width: 768px) {
+		    font-size: @headings_font_size + 4px;
+		}
+	}
+	.uppercase();
+}
+h2 {
+	font-size: @headings_font_size - 2px;
+}
+h3 {
+	font-size: @headings_font_size - 6px;
+}
+h4 {
+	font-size: @headings_font_size - 8px;
+}
+h5, h6 {
+	font-size: @body_font_size + 1px;
+}

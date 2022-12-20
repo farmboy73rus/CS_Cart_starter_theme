@@ -1,0 +1,21 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+
+msgctxt "Addons::name::cp_starter_theme_addon"
+msgid "Cart-Power: Starter theme"
+msgstr "Cart-Power: Starter theme"
+
+msgctxt "Addons::description::cp_starter_theme_addon"
+msgid "Starter theme. Developed by <a target=\"_blank\" href=\"https://cart-power.com/\">Cart-Power</a>. Professional CS-Cart development."
+msgstr "Starter theme. Developed by <a target=\"_blank\" href=\"https://cart-power.com/\">Cart-Power</a>. Professional CS-Cart development."
+
+msgctxt "Languages::cp_starter_theme_addon.wishlist"
+msgid "Wishlist"
+msgstr "Wishlist"
+
+msgctxt "Languages::cp_starter_theme_addon.n_days_ago"
+msgid "[n] day ago|[n] days ago"
+msgstr "[n] day ago|[n] days ago"

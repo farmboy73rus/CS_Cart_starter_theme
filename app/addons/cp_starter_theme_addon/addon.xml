@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>cp_starter_theme_addon</id>
+    <version>1.0</version>
+    <priority>1</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>Cart-Power</supplier>
+    <supplier_link>https://cart-power.com</supplier_link>
+    <authors>
+        <author>
+            <name>Cart-Power</name>
+            <email>sales@cart-power.com</email>
+            <url>https://cart-power.com</url>
+        </author>
+    </authors>
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="social_networks">
+                <items>
+                    <item id="youtube">
+                        <type>input</type>
+                        <default_value>https://youtube.com/</default_value>
+                    </item>
+                    <item id="instagram">
+                        <type>input</type>
+                        <default_value>https://instagram.com/</default_value>
+                    </item>
+                    <item id="facebook">
+                        <type>input</type>
+                        <default_value>https://facebook.com/</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>
