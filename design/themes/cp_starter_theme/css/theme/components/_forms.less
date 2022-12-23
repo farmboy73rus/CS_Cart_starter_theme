@@ -1,0 +1,94 @@
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select{
+    min-height: @input_min_height;
+	height: @input_min_height;
+    outline: none !important;
+    padding: 0 @input_padding;
+    .transition(all 500ms);
+
+    @media (max-width: @cp_breakpoint_tablet) {
+        min-height: @input_min_height_mobile;
+        height: @input_min_height_mobile;
+    }
+}
+textarea {
+	height: auto;
+    padding: @input_padding;
+}
+.litecheckout .litecheckout__input, 
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select{
+    background-color: @input_background_color;
+    border-color: @input_border_color;
+    border-width: @input_border_width;
+    .border-radius(@button_rounded_corners);
+
+    &.cm-failed-field {
+        border-color: @red_primary;
+    }
+    &:hover, &:focus{
+        border-width: @input_border_width;
+        border-color: @primary_button;
+    }
+}
+.litecheckout .litecheckout__input,
+input[type="text"].ty-search-block__input,
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select{
+    &:hover, &:focus{
+        border-width: @input_border_width;
+        .box-shadow(none);
+    }
+}
+
+.ty-qty, .quantity{
+    .ty-value-changer{
+        .ty-value-changer__increase, .ty-value-changer__decrease{
+            background: @input_background_color;
+            border-color: @input_border_color;
+            &:hover{
+                border-color: @input_border_color;
+            }
+        }
+    }
+}
+
+label.cm-failed-label {
+    color: @red_primary;
+}
+label.cm-required:after {
+    padding-left: 3px;
+    color: @gray80;
+    content: "*";
+    font-size: 16px;
+    line-height: 1px;
+}
+input[type="text"].cm-failed-field,
+input[type="password"].cm-failed-field,
+input[type="email"].cm-failed-field,
+input[type="tel"].cm-failed-field,
+input[type="number"].cm-failed-field,
+select.cm-failed-field,
+textarea.cm-failed-field,
+.cm-field-container.cm-failed-field input[type="text"],
+.cm-field-container.cm-failed-field input[type="password"],
+.cm-field-container.cm-failed-field input[type="email"],
+.cm-field-container.cm-failed-field input[type="tel"],
+.cm-field-container.cm-failed-field input[type="number"] {
+    border: @input_border_width solid @red_primary;
+    background: @white;
+}
+.ty-error-text {
+    color: @red_primary;
+}

@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -ms-text-size-adjust: none;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: subpixel-antialiased;
+    height:100%;
+
+    body {
+        &:not(.fixed-header) .tygh-header {
+            z-index: 0;
+        }
+        &.fixed-header .top-menu-grid {
+            left: -@pdi;
+            width: calc(~'100vw +'@pdi);
+        }
+    }
+    @media screen and (max-width: 846px) {
+        overflow: hidden !important;
+
+        .tygh-header {
+            z-index: 0;
+        }
+        .ui-dialog {
+            position: fixed !important;
+
+            input[type="text"] {
+                max-width: 88vw;
+            }
+        }
+    }
+    @media screen and (min-width: 821px) {
+        body {
+            overflow: initial;
+            padding-right: @pdi;
+        }
+    }
+}
